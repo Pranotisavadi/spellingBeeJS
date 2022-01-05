@@ -24,21 +24,12 @@ First, we are going to add basic structure to our JS and then add the buttons we
             const a_button = document.xxxxxx
             a_button.innerHTML = "A";
             
- 3. Each button should be a ***button*** element and need to have a class attribute added of ***button is-warning m-2***, and a ***value*** attribute for the letter you are choosing.  
+ 3. Each button should be a ***button*** element and need to have a class attribute added of ******, and a ***value*** attribute for the letter you are choosing.  
 
  4. Create an ***ADD*** button with the a class attribute of ***button is-black***
 
  >NOTE:  YOU WILL NOT SEE THEM YET!!
 
- ### Step 2
+ 
 
-Now that we have the elements available and the buttons in JS, lets first do a some content loading.  We are going to use two loaders just to show them both.  In practice, you probably would not do this.
 
-  1.  Add an event listener with ***DOMContentLoaded*** that does that has a ***setTimeout*** of 3.5 sec that appends the ***ADD*** button to the ***game DIV***.  
-  
-          setTimeout(()=>{},***YOUR TIME IN MILLISECONDS***)
-  2.  Add an Immediately Invoked Function Expression (IIFE - pronounced "IF'Y").  This IIFE will also load a ***setTimeout*** for 3 seconds that will
-
-      - toggle a class hide for the ***loading DIV***, ***word DIV***, &  the ***words bank DIV***.  This will give animation feel.
-      - appends your letter buttons to your ***letter DIV***.
->NOTE:  The difference in the times is just to make the loading more visible.
