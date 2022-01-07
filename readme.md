@@ -30,7 +30,6 @@ First, we are going to add basic structure to our JS and then add the buttons we
 
  >NOTE:  YOU WILL NOT SEE THEM YET!!
 
-<<<<<<< HEAD
  ### Step 2
 
 Now that we have the elements available and the buttons in JS, lets first do a some content loading.  We are going to use two loaders just to show them both.  In practice, you probably would not do this.
@@ -50,8 +49,3 @@ Next, lets add the listeners to add the letters from our buttons to the ***word 
 
   1. Create an empty variable to "store" your clicked letter.
   2. Make an ***event listener*** for each of your 6 letter buttons.  Use the value we set in Step 1 and the empty variable to append the ***word DIV innerHTML***.
-=======
- 
-
-
->>>>>>> 9472fcaeaddd449cdeb92376c9a5021bafd33410
