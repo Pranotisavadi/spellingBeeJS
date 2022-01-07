@@ -45,6 +45,7 @@ f_button.innerHTML ="F";
 
 const addButton = document.createElement("div");
 addButton.classList.add("button","is-black");
+addButton.innerHTML = "ADD";
 
 
 //write the function to add the buttons to your HTML on page load
@@ -119,6 +120,24 @@ wordDIV.innerHTML += clickedLetter;
 console.log (clickedLetter, "button clicked");
 })
 //add a function to take your word from the word div and add it to an Array to then add to your Words Bank
+const wordsBankArray = [];
+let wordCount = 0;
+foundTitleDIV.innerHTML = `You have found ${wordCount} words!`;
+wordsBankDIV.appendChild(foundTitleDIV);
 
+addButton.addEventListener("click", (e) => {
+    e.preventDefault();
+    wordsBankArray.push(wordDIV.innerHTML);
+    console.log(wordsBankArray, "Words bank Array");
 
+    let newWordDIV = document.createElement("div");
+    newWordDIV.setAttribute('id', `${wordCount}`);
+    newWordDIV.classList.add("is-size-2");
+    newWordDIV.innerHTML = wordsBankArray[`${wordCount}`];
+    wordsBankDIV.appendChild(newWordDIV);
+    wordCount++;
+    foundTitleDIV.innerHTML = `You have found ${wordCount} words!`;
+    wordDIV.innerHTML = "";
+
+})
 
